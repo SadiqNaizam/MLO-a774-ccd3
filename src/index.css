@@ -4,89 +4,87 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%; /* Very Light Gray */
+    --foreground: 215 28% 17%; /* Dark Text (#111827) */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 98%;
+    --card-foreground: 215 28% 17%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 215 28% 17%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 77 25% 48%; /* Sage Green (#8A9A5B) */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 17% 96%; /* Very Light Gray (#F3F4F6) */
+    --secondary-foreground: 215 28% 17%; /* Dark Text */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 17% 96%;
+    --muted-foreground: 215 14% 47%; /* Medium Gray (#6B7280) */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 77 25% 90%; /* Light Sage Green */
+    --accent-foreground: 77 25% 38%; /* Darker Sage Green for text on light sage */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 14% 90%; /* Light Borders (#E5E7EB) */
+    --input: 210 14% 90%;
+    --ring: 77 25% 48%; /* Sage Green for focus */
 
     --radius: 0.5rem;
 
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /* Sidebar variables aligned with main theme */
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 215 28% 17%;
+    --sidebar-primary: 77 25% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 77 25% 90%;
+    --sidebar-accent-foreground: 77 25% 38%;
+    --sidebar-border: 210 14% 90%;
+    --sidebar-ring: 77 25% 48%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 215 28% 17%; /* Dark Gray (#1F2937) */
+    --foreground: 210 14% 87%; /* Light Gray Text (#D1D5DB) */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 215 28% 17%;
+    --card-foreground: 210 14% 87%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 210 14% 87%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 77 25% 48%; /* Sage Green (#8A9A5B) */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 19% 27%; /* Slightly Lighter Dark Gray (#374151) */
+    --secondary-foreground: 210 14% 87%; /* Light Gray Text */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 19% 27%;
+    --muted-foreground: 216 9% 67%; /* Medium Gray for dark (#9CA3AF) */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 77 25% 25%; /* Darker Sage Green */
+    --accent-foreground: 77 25% 85%; /* Lighter Sage Green for text */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%; /* Brighter Red for dark mode */
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 215 19% 27%; /* Darker Border (#374151) */
+    --input: 215 19% 27%;
+    --ring: 77 25% 48%; /* Sage Green for focus (can be adjusted for dark if needed, e.g., 77 35% 60%) */
+
+    /* Dark Sidebar variables aligned with main theme */
+    --sidebar-background: 215 28% 17%;
+    --sidebar-foreground: 210 14% 87%;
+    --sidebar-primary: 77 25% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 77 25% 25%;
+    --sidebar-accent-foreground: 77 25% 85%;
+    --sidebar-border: 215 19% 27%;
+    --sidebar-ring: 77 25% 48%;
   }
 }
 
@@ -97,5 +95,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans); /* Apply the font to the body */
   }
 }
